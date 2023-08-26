@@ -10,17 +10,28 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Slab:wght@400;900&display=swap" rel="stylesheet">
 </head>
 <body>
+	<!-- Logo et bouton devis -->
 <header class="container">
 	<h1>
 		<img class="logo" src="./assets/images/logo.png" alt="Print it ! Impressions d'entreprises" >
 	</h1>
 	<a class="btn devis" href="mailto:contact@print-it.tld">Devis</a>
 </header>
+<!-- Slider jusque contact -->
 <main>
 	<div id="banner">
-		<img class="banner-img" src="./assets/images/slideshow/slide1.jpg" alt="Banner Print-it">
-		<p>Impressions tous formats <span>en boutique et en ligne</span></p>
-		<div class="dots">
+		<!-- SLIDES -->
+			<img class="banner-img" src="./assets/images/slideshow/slide1.jpg" alt="Banner Print-it">
+			<p>Impressions tous formats <span>en boutique et en ligne</span></p>
+		<!-- FLECHES -->
+		<img class="arrow arrow_left" src="./assets/images/arrow_left.png" alt="left arrow">
+		<img class="arrow arrow_right" src="./assets/images/arrow_right.png" alt="right arrow">
+		<!-- BOUTONS -->
+		<div class="dots">	
+			<span id="dot1" class="dot dot_selected"></span>	
+			<span id="dot2" class="dot"></span>	
+			<span id="dot3" class="dot"></span>	
+			<span id="dot4" class="dot"></span>	
 		</div>
 	</div>
 	<section id="about-us" class="container">
@@ -102,6 +113,7 @@
 		</div>
 	</section>
 </main>
+<!-- Footer -->
 <footer>
 	<div>
 		<p class="footer-contact">Contact</p>
