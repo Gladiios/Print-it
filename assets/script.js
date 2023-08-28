@@ -24,12 +24,6 @@ const arrowRight = document.querySelector(".arrow_right");
 const banner = document.getElementById("banner");
 const bannerImage = document.querySelector(".banner-img");
 const bannerTagLine = document.querySelector("#banner p");
-// const dots = document.querySelector(".dots");
-// const dot1 = document.getElementById("dot1");
-// const dot2 = document.getElementById("dot2");
-// const dot3 = document.getElementById("dot3");
-// const dot4 = document.getElementById("dot4");
-// dots.classList.remove(".dots.dot_selected");
 
 // Slide courante
 let currentSlide = 0;
@@ -58,7 +52,6 @@ updateSlides();
 
 arrowLeft.addEventListener("click", () => {
   // calcul de la position de la slide precedente
-  // currentSlide = (currentSlide - 1 + slides.length) % slides.length;
   if (currentSlide === 0) {
     currentSlide = slides.length - 1;
   } else {
@@ -74,7 +67,6 @@ arrowLeft.addEventListener("click", () => {
 
 arrowRight.addEventListener("click", () => {
   // calcul de la position de la slide suivante
-  // currentSlide = (currentSlide + 1) % slides.length;
   if (currentSlide === slides.length - 1) {
     currentSlide = 0;
   } else {
